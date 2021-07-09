@@ -26,7 +26,7 @@ const setColorsToDom = (color) => {
 
 const getData = async () => {
   const response = await fetch(
-    "https://cors-anywhere.herokuapp.com/https://opendata.ecdc.europa.eu/covid19/movementindicators/json/",
+    "https://ecdc-proxy.awgaan.workers.dev/covid19/movementindicators/json/",
     {
       headers: {
         accept: "*/*",

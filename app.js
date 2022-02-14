@@ -9,7 +9,7 @@ const COLOR_DICT = {
 };
 
 const getRegion = (data, id) => {
-  return data.find((region) => region.geo_id_final === id);
+  return data.find((region) => region.LocationCode === id);
 };
 
 const setColorsToDom = (color) => {
@@ -53,6 +53,6 @@ const main = async () => {
   const data = await getData();
   const region = getRegion(data, CANARIAS_ID);
 
-  setColorsToDom(region.colour);
+  setColorsToDom(region.Colour);
 };
 main();

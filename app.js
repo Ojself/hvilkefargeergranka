@@ -6,6 +6,7 @@ const COLOR_DICT = {
   Green: "grønn",
   Orange: "oransje",
   Red: "rød",
+  "Dark Red": "mørk rød",
 };
 
 const getRegion = (data, id) => {
@@ -14,7 +15,7 @@ const getRegion = (data, id) => {
 
 const setColorsToDom = (color) => {
   const languageFriendlyColor = COLOR_DICT[color] || "No data";
-  const cssColor = color.toLowerCase();
+  const cssColor = color.split(" ").join("").toLowerCase();
   const header = document.getElementById("header-color");
   const paragraph = document.getElementById("country-color");
 

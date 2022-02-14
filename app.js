@@ -6,7 +6,7 @@ const COLOR_DICT = {
   Green: "grønn",
   Orange: "oransje",
   Red: "rød",
-  "Dark Red": "mørk rød",
+  "Dark Red": "mørkerød",
 };
 
 const getRegion = (data, id) => {

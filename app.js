@@ -30,6 +30,7 @@ const getData = async () => {
     "https://ecdc-proxy.awgaan.workers.dev/covid19/movementindicators/json/",
     {
       headers: {
+        crossorigin: "anonymous",
         accept: "*/*",
         "accept-language":
           "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5",
